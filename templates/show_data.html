@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel='stylesheet' href="{{url_for('static', filename='show_data.css')}}">
+
+{% endblock %}
+
+
+{% block section %}
+
+<div id='search_right'>
+	<iframe src='/pre_show_data'></iframe>
+</div>
+
+
+{% endblock %}

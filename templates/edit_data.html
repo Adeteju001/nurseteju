@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel='stylesheet' href="{{url_for('static', filename='edit_data.css')}}">
+
+{% endblock %}
+
+
+{% block section %}
+
+<section>
+	<div id='edit_right'>
+		<iframe name='edit_iframe' src='/pre_show_data'></iframe>
+	</div>
+
+	<div id='edit_left'>
+		<form id='change_column' action="/edit_data_post" target="edit_iframe" method="POST">
+			<div class='form_label'>MOVE:</div>
+			<select name='edit_move_html'>
+				<option value='Full_Name'>FULL NAME</option>
+                                <option value='Sex'>SEX</option>
+                                <option value='Age'>AGE</option>
+                                <option value='Marital_Status'>MARITAL STATUS</option>
+                                <option value='Address'>ADDRESS</option>
+                                <option value='Phone_Number'>PHONE NUMBER</option>
+                                <option value='Temperature'>TEMPERATURE</option>
+                                <option value='Blood_Pressure'>BLOOD PRESSURE</option>
+                                <option value='Weight'>WEIGHT</option>
+                                <option value='Symptom'>SYMPTOM</option>
+                                <option value='Assigned_Doctor'>ASSIGNED DOCTOR</option>
+                                <option value='Admission_Status'>ADMISSION STATUS</option>
+			</select>
+                        <div class='form_label'>AFTER:</div>
+                        <select name='edit_after_html'>
+				<option value='Full_Name'>FULL NAME</option>
+                                <option value='Sex'>SEX</option>
+                                <option value='Age'>AGE</option>
+                                <option value='Marital_Status'>MARITAL STATUS</option>
+                                <option value='Address'>ADDRESS</option>
+                                <option value='Phone_Number'>PHONE NUMBER</option>
+                                <option value='Temperature'>TEMPERATURE</option>
+                                <option value='Blood_Pressure'>BLOOD PRESSURE</option>
+                                <option value='Weight'>WEIGHT</option>
+                                <option value='Symptom'>SYMPTOM</option>
+                                <option value='Assigned_Doctor'>ASSIGNED DOCTOR</option>
+                                <option value='Admission_Status'>ADMISSION STATUS</option>
+                        </select>
+			</br></br>
+                        <input type='submit' value='MOVE'>
+		</form>
+		</br></br></br></br>
+
+
+		<form id='update_data' action="/update_data_post" target="edit_iframe" method="POST">
+			<div>UPDATE THE DATA IN COLUMN</div>
+			<select name='update_select_column_html'>
+				<option value='Full_Name'>FULL NAME</option>
+                                <option value='Sex'>SEX</option>
+                                <option value='Age'>AGE</option>
+                                <option value='Marital_Status'>MARITAL STATUS</option>
+                                <option value='Address'>ADDRESS</option>
+                                <option value='Phone_Number'>PHONE NUMBER</option>
+                                <option value='Temperature'>TEMPERATURE</option>
+                                <option value='Blood_Pressure'>BLOOD PRESSURE</option>
+                                <option value='Weight'>WEIGHT</option>
+                                <option value='Symptom'>SYMPTOM</option>
+                                <option value='Assigned_Doctor'>ASSIGNED DOCTOR</option>
+                                <option value='Admission_Status'>ADMISSION STATUS</option>
+                        </select>
+			<div>THAT HAS THE ID OF</div>
+			<input type='search' name='update_search_id_html'>
+			<div>WITH THIS TEXT</div>
+			<input type='input' name='update_text_html'>
+			</br></br>
+			<input type='submit' name='update_submit_html' value='UPDATE'>
+		</form>
+	</div>
+</section>
+
+{% endblock %}

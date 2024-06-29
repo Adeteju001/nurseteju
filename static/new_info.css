@@ -1,0 +1,47 @@
+section {
+	padding-top: 10px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: 0.25fr 0.5fr 0.25fr;
+	grid-template-rows: 1fr 0.1fr;
+	grid-template-areas:
+		"sec_left sec_center sec_right"
+		"sec_left sec_bottom sec_right";
+	grid-gap: 4px;
+	padding-bottom: 100px;
+}
+
+#sec_left {
+	/*background-color: green;*/
+	grid-area: sec_left;
+}
+
+#sec_center {
+	grid-area: sec_center;
+}
+
+#sec_right {
+	/*background-color: purple;*/
+	grid-area: sec_right;
+}
+
+#sec_bottom {
+	/*background-color: red;*/
+	grid-area: sec_bottom;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.form_label {
+	font-size:80% ;
+}
+
+#submit_button {
+	width: 100%;
+	font-weight: bold;
+	font-family: "Times New Romans";
+	font-size: 25px;
+}

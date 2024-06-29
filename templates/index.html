@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel='stylesheet' href="{{url_for('static', filename='index.css')}}">
+
+{% endblock %}
+
+
+
+{% block section %}
+
+<section>
+	<div>
+		<h1>Welcome to TEJU HEALTHCARE</h1>
+		<h3>This is the official record portal</h3>
+		<div id='section_button'>
+			<button><a href='/show_data'>SHOW DATA</a></button>
+			<button><a href='/search_data'>SEARCH DATA</a></button>
+
+			<button><a href='/edit_data'>EDIT DATA</a></button>
+		</div>
+		<button><a href='/new_info'>REGISTER NEW DATA</a></button>
+	</div>
+	
+</section>
+
+{% endblock %}

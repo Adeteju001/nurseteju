@@ -1,0 +1,13 @@
+section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 20vh;
+}
+
+button {
+	margin-top: 10px;
+	font-family: "Times New Romans";
+	font-size: 20px;
+	background-color: inherit;
+}

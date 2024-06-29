@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel='stylesheet' href="{{url_for('static', filename='search_data.css')}}">
+
+{% endblock %}
+
+
+{% block section %}
+
+<section>
+	<div id='search_right'>
+		<iframe name='search_iframe' src='/pre_show_data'></iframe>
+	</div>
+
+	<div id='search_left'>
+		</br>
+		<form id='search_column' action="/search_data_column" target="search_iframe" method="POST">
+			<div class='form_label'>SELECT COLUMN</div>
+			<select name='search_column_html'>
+				<option value='Full_Name'>FULL NAME</option>
+				<option value='Sex'>SEX</option>
+				<option value='Age'>AGE</option>
+				<option value='Marital_Status'>MARITAL STATUS</option>
+				<option value='Address'>ADDRESS</option>
+				<option value='Phone_Number'>PHONE NUMBER</option>
+				<option value='Temperature'>TEMPERATURE</option>
+				<option value='Blood_Pressure'>BLOOD PRESSURE</option>
+				<option value='Weight'>WEIGHT</option>
+				<option value='Symptom'>SYMPTOM</option>
+				<option value='Assigned_Doctor'>ASSIGNED DOCTOR</option>
+				<option value='Admission_Status'>ADMISSION STATUS</option>
+			</select>
+			</br></br>
+			<input type='submit' value='Search Column'>
+		</form>
+
+
+		</br></br></br></br></br>
+
+
+		<form id='search_row' action="/search_data_row" target="search_iframe" method="POST">
+                        <div class='form_label'>SELECT COLUMN</div>
+                        <select name='search_column_row_html'>
+				<option value='Full_Name'>FULL NAME</option>
+                                <option value='Sex'>SEX</option>
+                                <option value='Age'>AGE</option>
+                                <option value='Marital_Status'>MARITAL STATUS</option>
+                                <option value='Address'>ADDRESS</option>
+                                <option value='Phone_Number'>PHONE NUMBER</option>
+                                <option value='Temperature'>TEMPERATURE</option>
+                                <option value='Blood_Pressure'>BLOOD PRESSURE</option>
+                                <option value='Weight'>WEIGHT</option>
+                                <option value='Symptom'>SYMPTOM</option>
+                                <option value='Assigned_Doctor'>ASSIGNED DOCTOR</option>
+                                <option value='Admission_Status'>ADMISSION STATUS</option>
+                        </select>
+			</br>
+			<input type='search' name='search_row_html'></input>
+			</br></br>
+                        <input type='submit' value='Search Row'>
+		</form>
+
+		</br></br></br>
+
+		<button>
+			<a href="/pre_show_data" target="search_iframe">SHOW ALL</a>
+		</button>
+
+	</div>
+
+</section>
+
+{% endblock %}

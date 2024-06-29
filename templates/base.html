@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang=en>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='icon' type='image/x-icon' href="{{url_for('static', filename='images/logo.ico')}}">
+		<link rel='stylesheet' href="{{url_for('static', filename='base.css')}}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>DataBase</title>
+		{% block head %}
+
+		{% endblock %}
+	</head>
+	<body>
+		<header>
+				<img src="{{url_for('static', filename='images/logo.ico')}}" height=100%>
+				<label><b><a href='/'>TEJU HEALTHCARE</a></b></label>
+		</header>
+
+		{% block section %}
+
+		{% endblock %}
+
+		<footer>
+			<div class='contact'>
+				<ul id='footer_ul'>
+					<li class='footer_li'><a href='http://wa.me/+2348103646910?text=Hi+Nurse+Teju,' target='_blank'><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+					<li class='footer_li'><a href='tel:+2348103646910' target='_blank'><i class="fa fa-phone"></i> Phone</a></li>
+					<li class='footer_li'><a href='mailto:maryamadelakun@yahoo.com?subject=From%20NurseTeju%20site&body=Good%20day' target='_blank'><i class="fa fa-envelope"></i> Email</a></li>
+				</ul>
+			</div>
+
+			<div id='copywrite'>
+				<h4 class='copy_text'>&copy 2024</h4>
+			</div>
+		</footer>
+	</body>
+</html>

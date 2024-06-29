@@ -1,0 +1,38 @@
+section {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 0.2fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "edit_left edit_right";
+	grid-gap: 4px;
+}
+
+#edit_left {
+	/*background-color: red;*/
+	grid-area: edit_left;
+}
+
+#edit_right {
+	/*background-color: green;*/
+	grid-area: edit_right;
+}
+
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+select {
+        background-color: inherit;
+        font-weight: bold;
+        font-family: "Times New Romans";
+	width: 150px;
+}
+
+input {
+        font-weight: bold;
+        font-family: "Times New Romans";
+        width: 150px;
+}
+

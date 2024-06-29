@@ -1,0 +1,28 @@
+#section {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 0.5fr 1fr;
+
+	grid-template-areas: "sec_left sec_right";
+
+	grid-gap: 4px;
+}
+
+button {
+	margin-top: 10px;
+	font-family: "Times New Romans";
+	font-size: 20px;
+	background-color: inherit;
+}
+
+#sec_left {
+	background-color: red;
+	grid-area: sec_left;
+}
+
+#sec_right {
+	background-color: green;
+	grid-area: sec_right
+}
+
+

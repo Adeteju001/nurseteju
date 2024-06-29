@@ -1,0 +1,3 @@
+,ID,Date,Full_Name,Age,Sex,Marital_Status,Address,Phone_Number,Temperature,Blood_Pressure,Weight,Symptom,Assigned_Doctor,Admission_Status
+0,1,2024-06-29,Adesina,,male,single,Osogbo,08103230934,35,90,60,malaria,Dr. Ayinde,Not Admitted
+1,2,2024-06-29,Adesina,,male,,,,,,,,,

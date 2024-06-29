@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+<link rel='stylesheet' href="{{url_for('static', filename='new_info.css')}}">
+
+{% endblock %}
+
+
+
+{% block section %}
+
+<section>
+	<div id='sec_left'></div>
+	<div id='sec_center'>
+		<form id='main_form' action="/new_info_post" method="POST">
+			<div class='form_label'>FULL NAME</div>
+			<input type='text' name='full_name_html'>
+			<div class='form_label'>SEX</div>
+                        <input type='text' name='sex_html'><br>
+			<div class='form_label'>AGE</div>
+                        <input type='text' name='age_html'>
+			<div class='form_label'>MARITAL STATUS</div>
+			<input type='text' name='marital_status_html'></br>
+			<div class='form_label'>ADDRESS</div>
+                        <input type='text' name='address_html'><br>
+			<div class='form_label'>PHONE NUMBER</div>
+                        <input type='text' name='phone_number_html'><br>
+			<div class='form_label'>TEMPERATURE</div>
+                        <input type='text' name='temperature_html'><br>
+			<div class='form_label'>BLOOD PRESSURE</div>
+                        <input type='text' name='blood_pressure_html'><br>
+			<div class='form_label'>WEIGHT</div>
+                        <input type='text' name='weight_html'><br>
+			<div class='form_label'>SYMPTOM</div>
+                        <input type='text' name='symptom_html'><br>
+			<div class='form_label'>ASSIGNED DOCTOR</div>
+                        <input type='text' name='assigned_doctor_html'><br>
+			<div class='form_label'>ADMISSION STATUS</div>
+                        <input type='text' name='admission_status_html'><br>
+		</form>
+	</div>
+	
+	<div id='sec_bottom'>
+		<input id='submit_button' type='submit' name='submit_html' form='main_form' value='Register into Database'>
+	</div>
+
+	<div id='sec_right'></div>
+</section>
+
+{% endblock %}
