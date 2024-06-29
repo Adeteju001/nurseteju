@@ -1,7 +1,7 @@
 section {
 	display: grid;
 	height: 100vh;
-	grid-template-columns: 0.3fr 1fr;
+	grid-template-columns: 0.2fr 1fr;
 	grid-template-rows: 1fr;
 	grid-template-areas: "search_left search_right";
 	grid-gap: 4px;
